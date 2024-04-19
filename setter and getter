@@ -1,0 +1,238 @@
+class Code {
+    private int a;
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+}
+class Code {
+    private int a, b;
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int a) {
+        this.a = a;
+    }
+
+    public int getB() {
+        return b;
+    }
+
+    public void setB(int b) {
+        this.b = b;
+    }
+}
+class Emp {
+    private int id;
+    private String name;
+    private double salary;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
+class Student {
+    private String name, course;
+    private double fee;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+}
+public class Code {
+    public static void main() {
+        System.out.println("Value of a: " + First.getA());
+    }
+}
+
+class First {
+    private static int a = 10;
+
+    public static int getA() {
+        return a;
+    }
+}
+public class Code {
+    public static void main() {
+        First.setA(10);
+        System.out.println("Value of a: " + First.getA());
+    }
+}
+
+class First {
+    private static int a;
+
+    public static int getA() {
+        return a;
+    }
+
+    public static void setA(int aValue) {
+        a = aValue;
+    }
+}
+public class Code {
+    public static void main() {
+        First obj = new First();
+        obj.setA(10);
+        System.out.println("Value of a: " + obj.getA());
+    }
+}
+
+class First {
+    private int a;
+
+    public int getA() {
+        return a;
+    }
+
+    public void setA(int aValue) {
+        a = aValue;
+    }
+}
+public class Code {
+    public static void main() {
+        Emp emp = new Emp();
+        emp.setId(1);
+        emp.setName("John");
+        emp.setSalary(50000.0);
+        System.out.println("Employee details:");
+        System.out.println("ID: " + emp.getId());
+        System.out.println("Name: " + emp.getName());
+        System.out.println("Salary: $" + emp.getSalary());
+    }
+}
+
+class Emp {
+    private int num;
+    private String name;
+    private double salary;
+
+    public int getId() {
+        return num;
+    }
+
+    public void setId(int num) {
+        this.num = num;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+}
+public class Code {
+    public static void main() {
+        Student student = new Student();
+        student.setName("Alice");
+        student.setCourse("Computer Science");
+        student.setFee(1000.0);
+        System.out.println("Student details:");
+        System.out.println("Name: " + student.getName());
+        System.out.println("Course: " + student.getCourse());
+        System.out.println("Fee: $" + student.getFee());
+    }
+}
+
+class Student {
+    private String name, course;
+    private double fee;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCourse() {
+        return course;
+    }
+
+    public void setCourse(String course) {
+        this.course = course;
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    public void setFee(double fee) {
+        this.fee = fee;
+    }
+}
+public class Code {
+    public static void main() {
+        First obj = new First(10);
+        System.out.println("Value of a: " + obj.getA());
+    }
+}
+
+class First {
+    private int a;
+
+    public First(int aValue) {
+        a = aValue;
+    }
+
+    public int getA() {
+        return a;
+    }
+}
